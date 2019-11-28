@@ -41,8 +41,7 @@ Required body parameters:
 
 The response is a JSON with the access_token as one of multiple response elements.
 
-More documentation about BankID OIDC token API:
-[https://confluence.bankidnorge.no/confluence/pdoidcl/technical-documentation/rest-api/token](https://confluence.bankidnorge.no/confluence/pdoidcl/technical-documentation/rest-api/token)
+[More documentation about BankID OIDC token API](https://confluence.bankidnorge.no/confluence/pdoidcl/technical-documentation/rest-api/token).
 
 ### 2 Call the service
 
