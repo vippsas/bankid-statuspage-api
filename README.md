@@ -1,7 +1,7 @@
 # bankid-statuspage-api
 
 The BankID Statuspage API is a REST service delivering information about operational status for BankID.
-The response is a direct mirror of the JSON feed from a [statuspage](https://www.statuspage.io/) set up for this purpose.
+The response is a direct mirror of the JSON feed from a statuspage ([statuspage.io](https://www.statuspage.io/)) set up for this purpose.
 
 The status overview is build up of four components:
 
@@ -30,7 +30,7 @@ Get access_token from BankID OIDC.
 |---|---|
 | GET | https://oidc.bankidapis.no/auth/realms/prod/protocol/openid-connect/token |
 
-Required parameters:
+Required body parameters:
 
 | Body x-www-form-urlencoded  | Value|
 |---|---|
@@ -50,7 +50,7 @@ More documentation about BankID OIDC token API:
 |---|---|
 | GET | https://preview.bankidapis.no/operational-status/api/status |
 
-Requires authorization header with Bearer token:
+Requires authorization header:
 
  | Header  | Value|
 |---|---|
@@ -72,7 +72,7 @@ Note that the response element component\[status\] is an enumeration of the foll
 |major_outage|
 |under_maintenance|
 
-```
+<pre><code>
 {
    ?page?: {
        ?id?: ?...?,
@@ -143,4 +143,4 @@ Note that the response element component\[status\] is an enumeration of the foll
            ]
        }
    ]
-}```
+}</code></pre>
