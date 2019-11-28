@@ -22,7 +22,7 @@ Order access by filling out the form at the [BankID production service desk](htt
 
 Step by step guide for how to integrate with the service.
 
-### 1 Retrieve access token
+### 1) Retrieve access token
 
 Get access_token from BankID OIDC.
 
@@ -43,7 +43,7 @@ The response is a JSON with the access_token as one of multiple response element
 
 [More documentation about BankID OIDC token API](https://confluence.bankidnorge.no/confluence/pdoidcl/technical-documentation/rest-api/token).
 
-### 2 Call the service
+### 2) Call the service
 
 | HTTP Method | Production URL |
 |---|---|
@@ -53,7 +53,7 @@ Requires authorization header:
 
  | Header  | Value|
 |---|---|
-|Authorization|"Bearer \<access_token\>"|
+|Authorization|Bearer \<access_token\>|
  
 ## Request rate limit
 
