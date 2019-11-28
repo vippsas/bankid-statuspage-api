@@ -6,11 +6,11 @@ The response is a direct mirror of the JSON feed from a statuspage ([statuspage.
 The status overview is build up of four components:
 
 * BankID
-* BankID p� mobil
-* BankID p� mobil for Telenor
-* BankID p� mobil for Telia
+* BankID på mobil
+* BankID på mobil for Telenor
+* BankID på mobil for Telia
 
-"BankID p� mobil" is an aggregation of the "Telenor" and "Telia" components.
+"BankID på mobil" is an aggregation of the "Telenor" and "Telia" components.
 
 Authorization for the service is handled by the [BankID OIDC platform](https://confluence.bankidnorge.no/confluence/pdoidcl/introduction).
 
@@ -74,72 +74,72 @@ Note that the response element component\[status\] is an enumeration of the foll
 
 <pre><code>
 {
-   ?page?: {
-       ?id?: ?...?,
-       ?name?: ?BankID?,
-       ?url?: ?...statuspage.io?,
-       ?time_zone?: ?Europe/Copenhagen?,
-       ?updated_at?: ?2019-11-11T16:46:44.154+01:00"
+   “page”: {
+       “id”: “...”,
+       “name”: “BankID”,
+       “url”: “...statuspage.io“,
+       “time_zone”: “Europe/Copenhagen”,
+       “updated_at”: “2019-11-11T16:46:44.154+01:00"
    },
-   ?components?: [
+   “components”: [
        {
-           ?id?: ?...?,
-           ?name?: ?BankID p� mobil for Telenor?,
-           ?status?: ?operational?,
-           ?created_at?: ?2016-10-13T01:48:15.190+02:00?,
-           ?updated_at?: ?2019-11-11T16:46:44.107+01:00?,
-           ?position?: 1,
-           ?description?: null,
-           ?showcase?: true,
-           ?group_id?: ?...?,
-           ?page_id?: ?...?,
-           ?group?: false,
-           ?only_show_if_degraded?: false
+           “id”: “...”,
+           “name”: “BankID på mobil for Telenor”,
+           “status”: “operational”,
+           “created_at”: “2016-10-13T01:48:15.190+02:00”,
+           “updated_at”: “2019-11-11T16:46:44.107+01:00”,
+           “position”: 1,
+           “description”: null,
+           “showcase”: true,
+           “group_id”: “...”,
+           “page_id”: “...”,
+           “group”: false,
+           “only_show_if_degraded”: false
        },
        {
-           ?id?: ?...",
-           ?name?: ?BankID?,
-           ?status?: ?operational?,
-           ?created_at?: ?2016-10-13T01:48:15.166+02:00",
-           ?updated_at?: ?2019-10-31T13:13:25.985+01:00",
-           ?position?: 1,
-           ?description?: null,
-           ?showcase?: true,
-           ?group_id?: null,
-           ?page_id?: ?...?,
-           ?group?: false,
-           ?only_show_if_degraded?: false
+           “id”: “...",
+           “name”: “BankID”,
+           “status”: “operational”,
+           “created_at”: “2016-10-13T01:48:15.166+02:00",
+           “updated_at”: “2019-10-31T13:13:25.985+01:00",
+           “position”: 1,
+           “description”: null,
+           “showcase”: true,
+           “group_id”: null,
+           “page_id”: “...”,
+           “group”: false,
+           “only_show_if_degraded”: false
        },
        {
-           ?id?: ?...?,
-           ?name?: ?BankID p� mobil for Telia?,
-           ?status?: ?operational?,
-           ?created_at?: ?2016-11-08T14:31:12.103+01:00",
-           ?updated_at?: ?2019-10-31T01:00:34.215+01:00",
-           ?position?: 2,
-           ?description?: null,
-           ?showcase?: true,
-           ?group_id?: ?...?,
-           ?page_id?: ?...?,
-           ?group?: false,
-           ?only_show_if_degraded?: false
+           “id”: “...”,
+           “name”: “BankID på mobil for Telia”,
+           “status”: “operational”,
+           “created_at”: “2016-11-08T14:31:12.103+01:00",
+           “updated_at”: “2019-10-31T01:00:34.215+01:00",
+           “position”: 2,
+           “description”: null,
+           “showcase”: true,
+           “group_id”: “...”,
+           “page_id”: “...”,
+           “group”: false,
+           “only_show_if_degraded”: false
        },
        {
-           ?id?: ?...?,
-           ?name?: ?BankID p� mobil?,
-           ?status?: ?operational?,
-           ?created_at?: ?2016-11-08T14:30:43.550+01:00?,
-           ?updated_at?: ?2018-04-25T01:56:30.786+02:00?,
-           ?position?: 3,
-           ?description?: null,
-           ?showcase?: false,
-           ?group_id?: null,
-           ?page_id?: ?...?,
-           ?group?: true,
-           ?only_show_if_degraded?: false,
-           ?components?: [
-               ?...?,
-               ?...?
+           “id”: “...”,
+           “name”: “BankID på mobil”,
+           “status”: “operational”,
+           “created_at”: “2016-11-08T14:30:43.550+01:00”,
+           “updated_at”: “2018-04-25T01:56:30.786+02:00”,
+           “position”: 3,
+           “description”: null,
+           “showcase”: false,
+           “group_id”: null,
+           “page_id”: “...”,
+           “group”: true,
+           “only_show_if_degraded”: false,
+           “components”: [
+               “...”,
+               “...”
            ]
        }
    ]
