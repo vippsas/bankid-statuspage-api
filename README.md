@@ -12,10 +12,12 @@ The status overview is build up of four components:
 
 "BankID på mobil" is an aggregation of the "Telenor" and "Telia" components.
 
-Authorization for the service is handled by the [BankID OIDC platform](https://confluence.bankidnorge.no/confluence/pdoidcl/introduction).
 
 ## Provisioning
-BankID merchants and bank partners are eligible for access to the service.
+Authorization for the service is handled by the [BankID OpenID Connect provider (OIDC)](https://confluence.bankidnorge.no/confluence/pdoidcl/introduction).
+
+BankID merchants and bank partners are eligible for access.
+
 Order access by filling out the form at the [BankID production service desk](https://servicedesk.bankidnorge.no/jira/servicedesk/customer/portal/3/group/9).
 
 ## Implementation guide
@@ -57,7 +59,7 @@ Requires authorization header:
  
 ## Request rate limit
 
-Please limit the request rate to no more than **one request every 30 seconds**.
+Please limit the request rate to no more than **once request every 30 seconds**.
 
 ## Example response
 
@@ -143,3 +145,12 @@ Note that the response element component\[status\] is an enumeration of the foll
        }
    ]
 }</code></pre>
+
+## BankID OpenID Connect statuspage
+Note that a dedicated and separate statuspage is available for the Bank OpenID Connect platform and other related services.
+
+[https://oidc1.statuspage.io/](https://oidc1.statuspage.io/)
+ 
+A corresponding JSON feed can be retrieved by simply applying the json accept header:
+
+<code>curl -i -H "Accept: application/json" https://oidc1.statuspage.io/</code>
