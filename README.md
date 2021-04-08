@@ -26,11 +26,11 @@ Step by step guide for how to integrate with the service.
 
 ### 1) Retrieve access token
 
-Get access_token from BankID OIDC.
+Request an access_token from BankID OIDC.
 
 | HTTP Method | Production URL |
 |---|---|
-| GET | https://oidc.bankidapis.no/auth/realms/prod/protocol/openid-connect/token |
+| POST | https://oidc.bankidapis.no/auth/realms/prod/protocol/openid-connect/token |
 
 Required body parameters:
 
